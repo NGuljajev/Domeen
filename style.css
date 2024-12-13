@@ -1,0 +1,156 @@
+/* style.css */
+body {
+  background: #ffd5d5;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.avaleht {
+  background-color: pink;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #8B3E3E;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #A44D4D;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.label {
+  margin-top: 5px;
+  display: block;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+/* Style for input group */
+.input-group {
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center the items */
+  align-items: center; /* Vertically align items */
+  gap: 10px; /* Space between input and dropdown */
+  margin-bottom: 20px;
+}
+
+.text-box {
+  flex: 1; /* Allow the input to expand */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.domain-container {
+  background-color: rosybrown;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+.domain-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.domain-row:last-child {
+  border-bottom: none;
+}
+
+.domain-name {
+  flex: 2;
+  font-weight: bold;
+}
+
+.period-select {
+  flex: 1;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.price {
+  flex: 1;
+  text-align: center;
+}
+
+/* Style for the top header */
+.top-header {
+  position: fixed; /* Makes the header stick to the top */
+  top: 0;
+  width: 100%;
+  background-color: #8B3E3E; /* Dark red background */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add vertical spacing */
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}

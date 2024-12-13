@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Domain Selector</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="top-header">
+      Welcome to the Domain Selector Page!
+    </header>
+  </body>
+  <body class="avaleht">
+    
+    <div class="main-container">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+      <div class="container">
+        <div class="stepper">
+          <div class="step active">
+            <span class="circle">1</span>
+            <span class="label">Otsi</span>
+          </div>
+          <div class="step">
+            <span class="circle">2</span>
+            <span class="label">Kontaktandmed</span>
+          </div>
+          <div class="step">
+            <span class="circle">3</span>
+            <span class="label">Maksa</span>
+          </div>
+        </div>
+      
+        <h1>Vali oma domeen</h1>
+        <div class="input-group">
+          <input type="text" id="textBox" class="text-box" placeholder="Type something...">
+          <select id="domain-select" class="dropdown">
+            <option value=".eu">.EU</option>
+            <option value=".ru">.RU</option>
+            <option value=".ee">.EE</option>
+            <option value=".www">.WWW</option>
+          </select>
+        </div>
+        
+      <div class="domain-container">
+        <div class="domain-row">
+          <span class="domain-name">domeen&uuml;ks.ee</span>
+          <select class="period-select">
+            <option value="1-year">vali periood</option>
+            <option value="1-year">1 Year</option>
+            <option value="2-years">2 Years</option>
+          </select>
+          <span class="price">4.69$ + VAT</span>
+        </div>
+        <div class="domain-row">
+          <span class="domain-name">domeen&uuml;ks.eu</span>
+          <select class="period-select">
+            <option value="1-year">vali periood</option>
+            <option value="1-year">1 Year</option>
+            <option value="2-years">2 Years</option>
+          </select>
+          <span class="price">4.99$ + VAT</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
