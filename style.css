@@ -12,9 +12,10 @@ body {
 }
 
 
+
 /* CSS */
 .button-2 {
-  position: absolute;
+/*position: absolute; */
   right: -45%;
   align-items: center;
   background-color: pink;
@@ -108,7 +109,7 @@ a{
 
 .step:not(:last-child)::after {
   content: '';
-  position: absolute;
+  /*position: absolute;*/
   top: 50%;
   right: 0;
   height: 2px;
@@ -140,7 +141,7 @@ h1 {
 /* Style for input group */
 .input-group {
   display: flex; /* Align items horizontally */
-  justify-content: center; /* Center the items */
+  justify-content: left; /* Center the items */
   align-items: center; /* Vertically align items */
   gap: 10px; /* Space between input and dropdown */
   margin-bottom: 20px;
