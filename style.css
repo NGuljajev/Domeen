@@ -12,6 +12,13 @@ body {
 }
 
 
+.ripple {
+  --gradient: linear-gradient(to bottom right, deeppink, orangered);
+  background: var(--gradient);
+}
+.ripple.animating {
+  background: paint(ripple), var(--gradient);
+}
 
 /* CSS */
 .button-2 {
